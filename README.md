@@ -1,16 +1,25 @@
-## Hi there 👋
+# 👋 Hi, I'm Jashwanth Marisetty!  
 
-<!--
-**JashwanthMarisetty/JashwanthMarisetty** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+🚀 **Software Developer | Problem Solver | Tech Enthusiast**  
 
-Here are some ideas to get you started:
+### 💡 About Me  
+- 🎓 Passionate about **C++,Algorithms,JavaScript,Web Development**  
+- 🌍 Exploring **Web Development & Django**  
+- 💻 Solving problems in **Data Structures & Algorithms**  
+- 🔭 Currently working on **React, Tailwind CSS & Backend Development**  
+- ⚡ Love working on **efficient and optimized solutions**  
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### 🛠 Tech Stack  
+- **Languages**: C++, JavaScript, Python  
+- **Frontend**: React.js, Tailwind CSS  
+- **Backend**: Django, Firebase, Node.js  
+- **Databases**: MySQL, Firestore , MongoDB 
+- **Other Tools**: Git, GitHub, VS Code  
+
+
+### 📫 Connect With Me  
+- 📩 Email: jashwanthmarisetty217@gmail.com
+- 💼 LinkedIn: https://www.linkedin.com/in/jashwanth-marisetty-26947631a/
+- 🔗 GitHub: [JashwanthMarisetty] (https://github.com/JashwanthMarisetty)  
+
+✨ **Let's build something amazing together!** 🚀  
