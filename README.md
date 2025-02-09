@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Jashwanth Marisetty!  
 
-🚀 **Software Developer | Problem Solver | Tech Enthusiast**  
+🚀 **Problem Solver | Tech Enthusiast**  
 
 ### 💡 About Me  
 - 🎓 Passionate about **C++,Algorithms,JavaScript,Web Development**  
