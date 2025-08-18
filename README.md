@@ -11,11 +11,10 @@
 
 ### 🛠 Tech Stack  
 - **Languages**: C++, JavaScript, Python  
-- **Frontend**: React.js, Tailwind CSS  
-- **Backend**: Django, Firebase, Node.js  
-- **Databases**: MySQL, Firestore , MongoDB 
-- **Other Tools**: Git, GitHub, VS Code  
-
+- **Backend** :  Node.js , Django
+- **Databases**: MongoDB , MySQL
+- **Frontend**: React.js, Tailwind CSS 
+- **Other Tools**: Git
 
 ### 📫 Connect With Me  
 - 📩 Email: jashwanthmarisetty217@gmail.com
