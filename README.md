@@ -3,17 +3,16 @@
 🚀 **Problem Solver | Tech Enthusiast**  
 
 ### 💡 About Me  
-- 🎓 Passionate about **C++,Algorithms,JavaScript,Web Development**  
-- 🌍 Exploring **Web Development & Django**  
+- 🎓 Passionate about **Web Development,C++,Algorithms**  
+- 🌍 Mainly intested in **Backend Development**  
 - 💻 Solving problems in **Data Structures & Algorithms**  
-- 🔭 Currently working on **React, Tailwind CSS & Backend Development**  
-- ⚡ Love working on **efficient and optimized solutions**  
+- 🔭 Currently working on **Backend Development**  
 
 ### 🛠 Tech Stack  
 - **Languages**: C++, JavaScript, Python  
 - **Backend** :  Node.js , Django
-- **Databases**: MongoDB , MySQL
-- **Frontend**: React.js, Tailwind CSS 
+- **Databases**: MongoDB , PostgreSQL , MySQL
+- **Frontend**: React.js
 - **Other Tools**: Git
 
 ### 📫 Connect With Me  
