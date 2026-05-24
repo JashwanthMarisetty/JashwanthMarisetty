@@ -1,4 +1,3 @@
-```md
 <div align="center">
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,100:1e293b&height=250&section=header&text=Jashwanth%20Marisetty&fontSize=45&fontColor=ffffff&animation=fadeIn&fontAlignY=38" width="100%" />
@@ -218,4 +217,3 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1e293b,100:0f172a&height=120&section=footer"/>
 
 </div>
-```
