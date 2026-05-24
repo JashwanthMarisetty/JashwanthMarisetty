@@ -1,108 +1,245 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:eff6ff,100:dbeafe&height=80&section=header&text=Jashwanth%20Marisetty&fontSize=30&fontColor=0f172a" width="100%" />
+<!-- Animated Header Banner -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Jashwanth%20Marisetty&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=Backend%20Engineer%20%7C%20Problem%20Solver%20%7C%20Builder&descAlignY=52&descAlign=50"/>
 
-<h3>Backend Engineer | Node.js | Redis | RabbitMQ</h3>
+<!-- Typing Animation -->
+<a href="https://git.io/typing-svg">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=6AD3F7&center=true&vCenter=true&random=false&width=600&lines=Backend+Developer+%F0%9F%9A%80;Node.js+%7C+Express.js+%7C+PostgreSQL;Building+Scalable+APIs+%E2%9A%99%EF%B8%8F;98.6+Percentile+JEE+Main+2022+%F0%9F%8E%AF;LeetCode+Rating%3A+1833+%F0%9F%94%A5;Open+to+SDE+Roles+%F0%9F%92%BC" alt="Typing SVG" />
+</a>
 
-<p>Building scalable APIs, async workflows, and product-focused backend systems.</p>
+<br/>
+
+<!-- Social Badges -->
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Jashwanth%20Marisetty-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jashwanth-marisetty-26947631a/)
+[![GitHub](https://img.shields.io/badge/GitHub-JashwanthMarisetty-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/JashwanthMarisetty)
+[![Email](https://img.shields.io/badge/Gmail-jashwanthmarisetty217%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jashwanthmarisetty217@gmail.com)
+[![LeetCode](https://img.shields.io/badge/LeetCode-Rating%201833-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/JashwanthMarisetty/)
+
+<br/>
+
+<!-- Profile Views Counter -->
+![Profile Views](https://komarev.com/ghpvc/?username=JashwanthMarisetty&color=6AD3F7&style=for-the-badge&label=PROFILE+VIEWS)
+![GitHub followers](https://img.shields.io/github/followers/JashwanthMarisetty?style=for-the-badge&color=6AD3F7)
 
 </div>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Backend%20Engineer-111827?style=flat-square" />
-  <img src="https://img.shields.io/badge/Node.js-16a34a?style=flat-square" />
-  <img src="https://img.shields.io/badge/Redis-dc2626?style=flat-square" />
-  <img src="https://img.shields.io/badge/RabbitMQ-f97316?style=flat-square" />
-  <img src="https://img.shields.io/badge/PostgreSQL-2563eb?style=flat-square" />
-</p>
+---
+
+## 🧠 About Me
+
+```typescript
+const jashwanth = {
+  name:       "Marisetty Jashwanth",
+  college:    "IIIT Jabalpur — B.Tech CSE (2022–Present)",
+  role:       "Backend Developer",
+  location:   "Jabalpur, India 🇮🇳",
+
+  currentlyBuilding: [
+    "🧱 Formula Builder  — Full-stack form engine with AI spam detection",
+    "🚛 Smart Truck     — K-means clustering for last-mile logistics",
+    "📦 Bhandara App    — Hyperlocal food-event platform (Play Store ✅)",
+  ],
+
+  techStack: {
+    languages: ["JavaScript", "C++"],
+    backend:   ["Node.js", "Express.js", "RESTful APIs"],
+    databases: ["PostgreSQL", "MongoDB", "Redis", "MySQL"],
+    devOps:    ["Docker", "RabbitMQ", "Firebase", "Git"],
+    ai_tools:  ["HuggingFace Toxic-BERT", "Google Maps API"],
+  },
+
+  achievements: {
+    jee:        "98.6 Percentile — JEE Main 2022 (Top 1.4% of 1M+ students)",
+    leetcode:   "Rating 1833 | Rank 767 in Weekly Contest 482 (40K+ participants)",
+    codechef:   "3⭐ | Rating 1671",
+    codeforces: "Specialist | Rating 1423",
+  },
+
+  funFact: "I shipped a production-ready form builder from a 36-hour hackathon MVP 🏆",
+};
+```
 
 ---
 
-## About Me
-
-- Backend-focused CSE undergraduate
-- Internship and freelance experience in Node.js backend development
-- Strong interest in scalable systems, auth, caching, queues, and APIs
-- Competitive programming background
-
----
-
-## Tech Stack
-
-### Backend
-<p>
-  <img src="https://img.shields.io/badge/Node.js-16a34a?style=flat-square" />
-  <img src="https://img.shields.io/badge/Express.js-000000?style=flat-square" />
-  <img src="https://img.shields.io/badge/REST%20APIs-0f172a?style=flat-square" />
-</p>
-
-### Databases
-<p>
-  <img src="https://img.shields.io/badge/PostgreSQL-2563eb?style=flat-square" />
-  <img src="https://img.shields.io/badge/MongoDB-10b981?style=flat-square" />
-  <img src="https://img.shields.io/badge/Redis-dc2626?style=flat-square" />
-</p>
-
-### Tools
-<p>
-  <img src="https://img.shields.io/badge/Git-374151?style=flat-square" />
-  <img src="https://img.shields.io/badge/Docker-0891b2?style=flat-square" />
-  <img src="https://img.shields.io/badge/Postman-f59e0b?style=flat-square" />
-  <img src="https://img.shields.io/badge/RabbitMQ-f97316?style=flat-square" />
-</p>
-
----
-
-## Featured Projects
-
-### Formula — Form Builder
-Scalable full-stack form platform with:
-- multi-page forms
-- real-time response collection
-- Redis-based analytics sync
-- RabbitMQ email workflows
-- OTP authentication
-- toxicity detection using BERT
-
-### Smart Truck — Logistics Optimization System
-Backend system focused on:
-- route optimization
-- K-means clustering
-- zone consolidation
-- delivery efficiency
-
-### Fusion — Examination Management System
-Backend workflow system with:
-- grade submission APIs
-- CSV validation
-- transcript generation
-- SPI/CPI computation
-
----
-
-## GitHub Stats
+## 🛠️ Tech Stack & Tools
 
 <div align="center">
 
-<img height="150" src="https://github-readme-stats.vercel.app/api?username=JashwanthMarisetty&show_icons=true&theme=default&hide_border=true&bg_color=ffffff&title_color=0f172a&text_color=0f172a" />
-<img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=JashwanthMarisetty&layout=compact&theme=default&hide_border=true&bg_color=ffffff&title_color=0f172a&text_color=0f172a" />
+### Languages
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+
+### Backend
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![REST API](https://img.shields.io/badge/REST%20APIs-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+
+### Databases
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+
+### DevOps & Tools
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+
+### Frontend
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 
 </div>
 
 ---
 
-## Competitive Programming
+## 🚀 Featured Projects
 
-- LeetCode: 1833
-- CodeChef: 1671 (3⭐)
-- Codeforces: Specialist (1423)
+<div align="center">
+
+### 🧱 Formula — Intelligent Form Builder
+
+</div>
+
+> **Stack:** `Node.js` · `Express.js` · `MongoDB` · `Redis` · `RabbitMQ` · `React.js` · `HuggingFace API`
+
+| Feature | Details |
+|---|---|
+| 🤖 **AI Spam Detection** | Toxic-BERT NLP model classifies submissions across **6 toxicity categories** in real-time |
+| 📍 **Location Analytics** | Google Maps & Geocoding APIs for geographic response heatmaps |
+| ⚡ **Performance** | Redis caching + compound MongoDB indexes → **20–30% latency reduction** |
+| 🔐 **Security** | OTP auth · Google reCAPTCHA · Redis rate limiting |
+| 📬 **Async Notifications** | RabbitMQ handles **10+ concurrent email events** without blocking |
+| 📊 **QR Sharing** | QR-based form distribution with real-time response collection |
+| 🏆 **Origin** | 36-hour hackathon MVP → evolved into a production-ready system |
+
+[![Live Demo](https://img.shields.io/badge/🌐%20Live%20Demo-Click%20Here-6AD3F7?style=for-the-badge)](https://formula-builder-frontend.onrender.com)
+[![Repo](https://img.shields.io/badge/📂%20Source%20Code-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/JashwanthMarisetty/formula-builder)
 
 ---
 
-## Contact
+<div align="center">
 
-- Email: jashwanthmarisetty217@gmail.com
-- LinkedIn: https://www.linkedin.com/in/jashwanth-marisetty-26947631a/
-- GitHub: https://github.com/JashwanthMarisetty
+### 🚛 Smart Truck — Logistics Optimization System
+
+</div>
+
+> **Stack:** `Node.js` · `PostgreSQL` · `C++` · `K-Means Clustering`
+
+| Feature | Details |
+|---|---|
+| 📦 **Clustering** | K-Means groups **50+ delivery locations** into geographic zones automatically |
+| 🗺️ **Zone Consolidation** | Merges small zones (<15 packages) within 10 km radius to prevent truck underutilization |
+| ⚡ **Parallel Routing** | Assigns dedicated trucks per zone enabling parallel execution |
+| 📉 **Optimization** | Reduces overall delivery time via density-aware geographic partitioning |
+
+[![Repo](https://img.shields.io/badge/📂%20Source%20Code-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/JashwanthMarisetty/Smart-Truck)
+
+---
+
+<div align="center">
+
+### 📱 Bhandara App — Hyperlocal Community Platform
+
+</div>
+
+> **Stack:** `Node.js` · `Express.js v5` · `MongoDB` · `Firebase FCM` · `Razorpay`
+
+| Feature | Details |
+|---|---|
+| 🌍 **Production Live** | Available on **Play Store** and **App Store** across India |
+| 🍱 **Domain** | Discovering & organizing free community food events (hyperlocal) |
+| 🔔 **Push Notifications** | Firebase FCM for real-time event updates |
+| 💳 **Payments** | Razorpay integration for seamless in-app transactions |
+
+---
+
+<div align="center">
+
+### 🎓 Fusion — Examination & Grade Management System
+
+</div>
+
+> **Stack:** `Node.js` · `PostgreSQL` · `JWT` · `RESTful APIs`
+
+| Feature | Details |
+|---|---|
+| 🏫 **Users** | Faculty, administrators & students at IIIT Jabalpur |
+| 📊 **Bulk Processing** | CSV upload/validation handling **270+ student records** per batch |
+| 📜 **Transcripts** | Auto-generated with SPI & CPI computation for **400+ students** |
+
+---
+
+## 🏆 Achievements & Competitive Programming
+
+<div align="center">
+
+| Platform | Achievement |
+|:---:|:---|
+| 🎯 **JEE Main 2022** | **98.6 Percentile** — Top 1.4% among 1,000,000+ candidates across India |
+| 🟠 **LeetCode** | Rating **1833** · Ranked **767** in Weekly Contest 482 (40,000+ participants) |
+| ⭐ **CodeChef** | **3 Star** · Rating **1671** |
+| 🟣 **Codeforces** | **Specialist** · Rating **1423** |
+
+</div>
+
+---
+
+## 📊 GitHub Statistics
+
+<div align="center">
+
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=JashwanthMarisetty&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=6AD3F7&icon_color=6AD3F7&text_color=FFFFFF"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=JashwanthMarisetty&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6AD3F7&text_color=FFFFFF"/>
+
+<br/>
+
+<img width="70%" src="https://github-readme-streak-stats.herokuapp.com/?user=JashwanthMarisetty&theme=tokyonight&hide_border=true&background=0D1117&stroke=6AD3F7&ring=6AD3F7&fire=FF6C37&currStreakLabel=6AD3F7"/>
+
+<br/>
+
+<!-- GitHub Trophies -->
+<img width="100%" src="https://github-profile-trophy.vercel.app/?username=JashwanthMarisetty&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4&column=7"/>
+
+<br/>
+
+<!-- Contribution Graph -->
+<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=JashwanthMarisetty&bg_color=0D1117&color=6AD3F7&line=6AD3F7&point=FF6C37&area=true&hide_border=true"/>
+
+</div>
+
+---
+
+## 🐍 Contribution Snake
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JashwanthMarisetty/JashwanthMarisetty/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JashwanthMarisetty/JashwanthMarisetty/output/github-contribution-grid-snake.svg" />
+  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/JashwanthMarisetty/JashwanthMarisetty/output/github-contribution-grid-snake.svg" />
+</picture>
+
+</div>
+
+---
+
+## 🤝 Let's Connect
+
+<div align="center">
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Let's%20Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jashwanth-marisetty-26947631a/)
+[![Email](https://img.shields.io/badge/Gmail-Drop%20a%20Mail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jashwanthmarisetty217@gmail.com)
+[![LeetCode](https://img.shields.io/badge/LeetCode-View%20Profile-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/)
+[![Codeforces](https://img.shields.io/badge/Codeforces-Specialist%201423-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white)](https://codeforces.com/)
+[![CodeChef](https://img.shields.io/badge/CodeChef-3⭐%20%7C%201671-5B4638?style=for-the-badge&logo=codechef&logoColor=white)](https://www.codechef.com/)
+
+<br/>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer&animation=twinkling"/>
 
 </div>
