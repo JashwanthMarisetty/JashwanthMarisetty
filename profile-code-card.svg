@@ -3,17 +3,26 @@
   <defs>
     <!-- Dark Gritty Volcanic Background Gradient -->
     <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#090605" />
-      <stop offset="50%" stop-color="#120A07" />
-      <stop offset="100%" stop-color="#1F0D03" />
+      <stop offset="0%" stop-color="#070403" />
+      <stop offset="50%" stop-color="#0E0704" />
+      <stop offset="100%" stop-color="#1A0A02" />
     </linearGradient>
 
     <!-- KGF Molten Gold & Fire Border Gradient -->
     <linearGradient id="border-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FF5F1F" /> <!-- Magma Orange -->
+      <stop offset="0%" stop-color="#FF4500" /> <!-- Lava Red-Orange -->
       <stop offset="50%" stop-color="#FFD700" /> <!-- Gold -->
-      <stop offset="100%" stop-color="#B25E00" /> <!-- Bronze -->
+      <stop offset="100%" stop-color="#8B4513" /> <!-- Charcoal Bronze -->
     </linearGradient>
+
+    <!-- Highly Optimized Glow Filter for tiny sparks only (prevents lag) -->
+    <filter id="spark-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
 
     <style type="text/css">
       <![CDATA[
@@ -25,21 +34,54 @@
         fill: #E5E7EB;
       }
 
-      /* --- HARDWARE ACCELERATED ANIMATIONS (NO BLURS) --- */
-      @keyframes float-embers {
+      /* --- THERMAL DRAFT PARTICLE PHYSICS (60FPS GPU DRIVEN) --- */
+      @keyframes draft-wavy-left {
         0% {
-          transform: translateY(150px) translateX(0) scale(0.5);
+          transform: translateY(1250px) translateX(0) scale(1) rotate(0deg);
           opacity: 0;
+          fill: #FFFFFF;
         }
-        20% {
-          opacity: 0.9;
+        10% {
+          opacity: 1;
+          fill: #FFF4A3;
         }
-        80% {
+        50% {
+          transform: translateY(600px) translateX(-35px) scale(0.8) rotate(180deg);
+          fill: #FF5E00;
+        }
+        90% {
           opacity: 0.6;
+          fill: #8B0000;
         }
         100% {
-          transform: translateY(-400px) translateX(50px) scale(0.2);
+          transform: translateY(50px) translateX(25px) scale(0.3) rotate(360deg);
           opacity: 0;
+          fill: #3E0C06;
+        }
+      }
+
+      @keyframes draft-wavy-right {
+        0% {
+          transform: translateY(1250px) translateX(0) scale(0.8) rotate(0deg);
+          opacity: 0;
+          fill: #FFEAA7;
+        }
+        15% {
+          opacity: 0.95;
+          fill: #FFAE00;
+        }
+        60% {
+          transform: translateY(500px) translateX(45px) scale(0.6) rotate(-120deg);
+          fill: #E63B00;
+        }
+        90% {
+          opacity: 0.5;
+          fill: #5E0000;
+        }
+        100% {
+          transform: translateY(50px) translateX(-15px) scale(0.2) rotate(-240deg);
+          opacity: 0;
+          fill: #210200;
         }
       }
 
@@ -59,9 +101,16 @@
       }
 
       /* --- CLASS BINDINGS --- */
-      .ember {
-        animation: float-embers 8s infinite linear;
+      .spark-left {
+        animation: draft-wavy-left 9s infinite linear;
         transform-origin: center;
+        filter: url(#spark-glow);
+        will-change: transform, opacity;
+      }
+      .spark-right {
+        animation: draft-wavy-right 11s infinite linear;
+        transform-origin: center;
+        filter: url(#spark-glow);
         will-change: transform, opacity;
       }
       .live-cursor {
@@ -87,61 +136,6 @@
       .number { fill: #FF9F1C; }
       .bracket { fill: #EF4444; } /* Red outline */
       .comment { fill: #8B7D77; font-style: italic; } /* Volcanic Charcoal Ash */
-
-      /* --- STAGGERED LINE ANIMATION TIME --- */
-      .l1 { animation-delay: 0.03s; }
-      .l2 { animation-delay: 0.06s; }
-      .l3 { animation-delay: 0.09s; }
-      .l4 { animation-delay: 0.12s; }
-      .l5 { animation-delay: 0.15s; }
-      .l6 { animation-delay: 0.18s; }
-      .l7 { animation-delay: 0.21s; }
-      .l8 { animation-delay: 0.24s; }
-      .l9 { animation-delay: 0.27s; }
-      .l10 { animation-delay: 0.30s; }
-      .l11 { animation-delay: 0.33s; }
-      .l12 { animation-delay: 0.36s; }
-      .l13 { animation-delay: 0.39s; }
-      .l14 { animation-delay: 0.42s; }
-      .l15 { animation-delay: 0.45s; }
-      .l16 { animation-delay: 0.48s; }
-      .l17 { animation-delay: 0.51s; }
-      .l18 { animation-delay: 0.54s; }
-      .l19 { animation-delay: 0.57s; }
-      .l20 { animation-delay: 0.60s; }
-      .l21 { animation-delay: 0.63s; }
-      .l22 { animation-delay: 0.66s; }
-      .l23 { animation-delay: 0.69s; }
-      .l24 { animation-delay: 0.72s; }
-      .l25 { animation-delay: 0.75s; }
-      .l26 { animation-delay: 0.78s; }
-      .l27 { animation-delay: 0.81s; }
-      .l28 { animation-delay: 0.84s; }
-      .l29 { animation-delay: 0.87s; }
-      .l30 { animation-delay: 0.90s; }
-      .l31 { animation-delay: 0.93s; }
-      .l32 { animation-delay: 0.96s; }
-      .l33 { animation-delay: 0.99s; }
-      .l34 { animation-delay: 1.02s; }
-      .l35 { animation-delay: 1.05s; }
-      .l36 { animation-delay: 1.08s; }
-      .l37 { animation-delay: 1.11s; }
-      .l38 { animation-delay: 1.14s; }
-      .l39 { animation-delay: 1.17s; }
-      .l40 { animation-delay: 1.20s; }
-      .l41 { animation-delay: 1.23s; }
-      .l42 { animation-delay: 1.26s; }
-      .l43 { animation-delay: 1.29s; }
-      .l44 { animation-delay: 1.32s; }
-      .l45 { animation-delay: 1.35s; }
-      .l46 { animation-delay: 1.38s; }
-      .l47 { animation-delay: 1.41s; }
-      .l48 { animation-delay: 1.44s; }
-      .l49 { animation-delay: 1.47s; }
-      .l50 { animation-delay: 1.50s; }
-      .l51 { animation-delay: 1.53s; }
-      .l52 { animation-delay: 1.56s; }
-      .l53 { animation-delay: 1.59s; }
       ]]>
     </style>
   </defs>
@@ -149,31 +143,35 @@
   <!-- Solid Canvas Background -->
   <rect width="100%" height="100%" rx="16" fill="url(#bg-grad)" />
 
-  <!-- High-Performance Cinematic Rising Embers (Smooth 60fps vector particles) -->
-  <!-- Ember Group 1 -->
-  <circle class="ember" style="animation-delay: 0s;" cx="120" cy="900" r="4" fill="#FF5F1F" />
-  <circle class="ember" style="animation-delay: 1.5s;" cx="380" cy="1100" r="3" fill="#FFD700" />
-  <circle class="ember" style="animation-delay: 3s;" cx="620" cy="1000" r="4.5" fill="#FF8C00" />
-  <circle class="ember" style="animation-delay: 4.5s;" cx="220" cy="1200" r="2.5" fill="#FF5F1F" />
-  <!-- Ember Group 2 -->
-  <circle class="ember" style="animation-delay: 0.8s;" cx="780" cy="850" r="3.5" fill="#FFD700" />
-  <circle class="ember" style="animation-delay: 2.3s;" cx="490" cy="950" r="4" fill="#FF8C00" />
-  <circle class="ember" style="animation-delay: 3.8s;" cx="150" cy="1050" r="3" fill="#FF5F1F" />
-  <circle class="ember" style="animation-delay: 5.3s;" cx="710" cy="1150" r="5" fill="#FFD700" />
-  <!-- Small dust particles -->
-  <circle class="ember" style="animation-delay: 1.1s;" cx="300" cy="700" r="1.5" fill="#FFD700" />
-  <circle class="ember" style="animation-delay: 2.7s;" cx="580" cy="800" r="2" fill="#FF8C00" />
-  <circle class="ember" style="animation-delay: 4.2s;" cx="680" cy="650" r="1.5" fill="#FF5F1F" />
+  <!-- Layer 1: Thermodynamic Sparkles (Drifting organically in the background behind the glass) -->
+  <!-- Left-drifting sparkles -->
+  <path class="spark-left" style="animation-delay: 0s;" d="M 0,-4 L 3,0 L 0,4 L -3,0 Z" transform="translate(150, 0)" />
+  <path class="spark-left" style="animation-delay: 2.2s;" d="M 0,-5 L 4,0 L 0,5 L -4,0 Z" transform="translate(380, 0)" />
+  <path class="spark-left" style="animation-delay: 4.5s;" d="M 0,-3 L 2.5,0 L 0,3 L -2.5,0 Z" transform="translate(620, 0)" />
+  <path class="spark-left" style="animation-delay: 6.8s;" d="M 0,-4.5 L 3.5,0 L 0,4.5 L -3.5,0 Z" transform="translate(250, 0)" />
+  
+  <!-- Right-drifting sparkles -->
+  <path class="spark-right" style="animation-delay: 1.1s;" d="M 0,-5 L 3.5,0 L 0,5 L -3.5,0 Z" transform="translate(730, 0)" />
+  <path class="spark-right" style="animation-delay: 3.3s;" d="M 0,-3.5 L 2.5,0 L 0,3.5 L -2.5,0 Z" transform="translate(500, 0)" />
+  <path class="spark-right" style="animation-delay: 5.6s;" d="M 0,-4 L 3,0 L 0,4 L -3,0 Z" transform="translate(180, 0)" />
+  <path class="spark-right" style="animation-delay: 7.9s;" d="M 0,-5.5 L 4,0 L 0,5.5 L -4,0 Z" transform="translate(680, 0)" />
+  
+  <!-- Floating Micro-dust particles -->
+  <circle class="spark-left" style="animation-delay: 0.5s;" cx="290" cy="0" r="1.5" />
+  <circle class="spark-right" style="animation-delay: 2.9s;" cx="560" cy="0" r="2" />
+  <circle class="spark-left" style="animation-delay: 5.1s;" cx="440" cy="0" r="1.2" />
+  <circle class="spark-right" style="animation-delay: 7.3s;" cx="780" cy="0" r="1.8" />
 
-  <!-- Sleek Gritty Frame Border -->
+  <!-- Layer 2: Glassmorphic Overlay Frame Panels -->
   <rect x="3" y="3" width="844" height="1284" rx="16" fill="none" stroke="url(#border-grad)" stroke-width="2.5" />
-  <rect x="5" y="5" width="840" height="1280" rx="16" fill="rgba(10, 6, 5, 0.88)" />
+  <!-- Glassmorphic panel with high opacity for code legibility -->
+  <rect x="5" y="5" width="840" height="1280" rx="16" fill="rgba(9, 6, 5, 0.91)" />
 
   <!-- IDE Window Chrome Header -->
   <g transform="translate(25, 20)">
-    <circle cx="0" cy="0" r="6" fill="#4B200C" /> <!-- Dark volcanic dots -->
-    <circle cx="20" cy="0" r="6" fill="#E67E22" />
-    <circle cx="40" cy="0" r="6" fill="#F1C40F" />
+    <circle cx="0" cy="0" r="6" fill="#4B1808" /> 
+    <circle cx="20" cy="0" r="6" fill="#B25E00" />
+    <circle cx="40" cy="0" r="6" fill="#D97706" />
     <text x="75" y="5" font-size="12" fill="#8B7D77" font-weight="bold">developer.ts</text>
   </g>
 
