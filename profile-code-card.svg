@@ -26,9 +26,11 @@
       <feGaussianBlur stdDeviation="80" />
     </filter>
 
-    <style>
+    <!-- Safe CDATA Style wrapper for strict XML engines -->
+    <style type="text/css">
+      <![CDATA[
       /* --- FONTS & STYLES --- */
-      @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500;700&amp;display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500;700&display=swap');
       text {
         font-family: 'Fira Code', monospace;
         font-size: 13.5px;
@@ -155,13 +157,14 @@
       .l51 { animation-delay: 2.04s; }
       .l52 { animation-delay: 2.08s; }
       .l53 { animation-delay: 2.12s; }
+      ]]>
     </style>
   </defs>
 
   <!-- Solid Canvas Background -->
   <rect width="100%" height="100%" rx="16" fill="url(#bg-grad)" />
 
-  <!-- Dynamic Drifting Aurora Atmosphere (recruiter wow factor) -->
+  <!-- Dynamic Drifting Aurora Atmosphere -->
   <circle class="aurora-1" cx="150" cy="350" r="320" filter="url(#aurora-blur)" opacity="0.25" />
   <circle class="aurora-2" cx="700" cy="950" r="380" filter="url(#aurora-blur)" opacity="0.25" />
 
@@ -326,76 +329,4 @@
       <tspan class="bracket">],</tspan>
     </text>
 
-    <!-- cloud_and_apis: [ -->
-    <text class="code-line l38" x="85" y="844">
-      <tspan fill="#9CA3AF">cloud_and_apis:</tspan> <tspan class="bracket">[</tspan>
-    </text>
-
-    <!-- Firebase FCM, Google Maps API -->
-    <text class="code-line l39" x="115" y="866"><tspan class="string">"Firebase FCM"</tspan>,</text>
-    <text class="code-line l40" x="115" y="888"><tspan class="string">"Google Maps API"</tspan></text>
-
-    <!-- ], -->
-    <text class="code-line l41" x="85" y="910">
-      <tspan class="bracket">],</tspan>
-    </text>
-
-    <!-- ai_ml: [ -->
-    <text class="code-line l42" x="85" y="932">
-      <tspan fill="#9CA3AF">ai_ml:</tspan> <tspan class="bracket">[</tspan>
-    </text>
-
-    <!-- HuggingFace Toxic-BERT -->
-    <text class="code-line l43" x="115" y="954"><tspan class="string">"HuggingFace Toxic-BERT"</tspan></text>
-
-    <!-- ] -->
-    <text class="code-line l44" x="85" y="976">
-      <tspan class="bracket">]</tspan>
-    </text>
-
-    <!-- }, -->
-    <text class="code-line l45" x="55" y="998">
-      <tspan class="bracket">},</tspan>
-    </text>
-
-    <!-- achievements: { -->
-    <text class="code-line l46" x="55" y="1020">
-      <tspan class="property">achievements</tspan>: <tspan class="bracket">{</tspan>
-    </text>
-
-    <!-- jee: "98.6 Percentile..." -->
-    <text class="code-line l47" x="85" y="1042">
-      <tspan fill="#9CA3AF">jee:</tspan> <tspan class="string">"98.6 Percentile — JEE Main 2022 (Top 1.4%)"</tspan>,
-    </text>
-
-    <!-- leetcode: "Rating 1833..." -->
-    <text class="code-line l48" x="85" y="1064">
-      <tspan fill="#9CA3AF">leetcode:</tspan> <tspan class="string">"Rating 1833 | Rank 767 in Weekly 482"</tspan>,
-    </text>
-
-    <!-- codechef: "3⭐ | Rating 1671" -->
-    <text class="code-line l49" x="85" y="1086">
-      <tspan fill="#9CA3AF">codechef:</tspan> <tspan class="string">"3⭐ | Rating 1671"</tspan>,
-    </text>
-
-    <!-- codeforces: "Specialist | Rating 1423" -->
-    <text class="code-line l50" x="85" y="1108">
-      <tspan fill="#9CA3AF">codeforces:</tspan> <tspan class="string">"Specialist | Rating 1423"</tspan>
-    </text>
-
-    <!-- }, -->
-    <text class="code-line l51" x="55" y="1130">
-      <tspan class="bracket">},</tspan>
-    </text>
-
-    <!-- funFact: "I shipped..." -->
-    <text class="code-line l52" x="55" y="1152">
-      <tspan class="property">funFact</tspan>: <tspan class="string">"I shipped a production-ready form builder from a 36-hour hackathon MVP 🏆"</tspan>
-    </text>
-
-    <!-- }; -->
-    <text class="code-line l53" x="25" y="1174">
-      <tspan class="bracket">};</tspan><tspan class="live-cursor">_</tspan>
-    </text>
-  </g>
-</svg>
+    <!-- cloud_and_apis:
