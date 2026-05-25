@@ -10,15 +10,16 @@
 
 <br/>
 
-<!-- Social Badges -->
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Jashwanth%20Marisetty-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jashwanth-marisetty-26947631a/)
-[![GitHub](https://img.shields.io/badge/GitHub-JashwanthMarisetty-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/JashwanthMarisetty)
-[![Email](https://img.shields.io/badge/Gmail-jashwanthmarisetty217%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jashwanthmarisetty217@gmail.com)
-[![LeetCode](https://img.shields.io/badge/LeetCode-Rating%201833-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/JashwanthMarisetty/)
+<!-- Social Badges — clean labels only -->
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jashwanth-marisetty-26947631a/)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/JashwanthMarisetty)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jashwanthmarisetty217@gmail.com)
+[![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/u/JashwanthMarisetty_21/)
+[![CodeChef](https://img.shields.io/badge/CodeChef-5B4638?style=for-the-badge&logo=codechef&logoColor=white)](https://www.codechef.com/users/codewizard_18)
+[![Codeforces](https://img.shields.io/badge/Codeforces-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white)](https://codeforces.com/profile/Jass___)
 
 <br/>
 
-<!-- Profile Views Counter -->
 ![Profile Views](https://komarev.com/ghpvc/?username=JashwanthMarisetty&color=6AD3F7&style=for-the-badge&label=PROFILE+VIEWS)
 ![GitHub followers](https://img.shields.io/github/followers/JashwanthMarisetty?style=for-the-badge&color=6AD3F7)
 
@@ -37,14 +38,15 @@ const jashwanth = {
 
   currentlyBuilding: [
     "🧱 Formula Builder  — Full-stack form engine with AI spam detection",
-    "🚛 Smart Truck     — K-means clustering for last-mile logistics",
-    "📦 Bhandara App    — Hyperlocal food-event platform (Play Store ✅)",
+    "🚛 Smart Truck      — K-means clustering for last-mile logistics",
+    "📦 Bhandara App     — Hyperlocal food-event platform (Play Store ✅)",
   ],
 
   techStack: {
     languages: ["JavaScript", "C++"],
     backend:   ["Node.js", "Express.js", "RESTful APIs"],
     databases: ["PostgreSQL", "MongoDB", "Redis", "MySQL"],
+    frontend:  ["React.js", "HTML", "CSS", "Tailwind CSS"],
     devOps:    ["Docker", "RabbitMQ", "Firebase", "Git"],
     ai_tools:  ["HuggingFace Toxic-BERT", "Google Maps API"],
   },
@@ -58,7 +60,6 @@ const jashwanth = {
 
   funFact: "I shipped a production-ready form builder from a 36-hour hackathon MVP 🏆",
 };
-```
 
 ---
 
