@@ -1,33 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 1290" width="100%" height="100%">
   <defs>
-    <!-- Background Space Gradient -->
+    <!-- Dark Gritty Volcanic Background Gradient -->
     <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#070A13" />
-      <stop offset="50%" stop-color="#0F172A" />
-      <stop offset="100%" stop-color="#1E1B4B" />
+      <stop offset="0%" stop-color="#090605" />
+      <stop offset="50%" stop-color="#120A07" />
+      <stop offset="100%" stop-color="#1F0D03" />
     </linearGradient>
 
-    <!-- Sleek Neon Border Gradient -->
+    <!-- KGF Molten Gold & Fire Border Gradient -->
     <linearGradient id="border-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#3B82F6" />
-      <stop offset="25%" stop-color="#8B5CF6" />
-      <stop offset="75%" stop-color="#EC4899" />
-      <stop offset="100%" stop-color="#F59E0B" />
+      <stop offset="0%" stop-color="#FF5F1F" /> <!-- Magma Orange -->
+      <stop offset="50%" stop-color="#FFD700" /> <!-- Gold -->
+      <stop offset="100%" stop-color="#B25E00" /> <!-- Bronze -->
     </linearGradient>
 
-    <!-- Glassmorphic Overlay Filter -->
-    <filter id="glass-blur" x="-10%" y="-10%" width="120%" height="120%">
-      <feGaussianBlur stdDeviation="20" result="blur" />
-      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" />
-    </filter>
-
-    <!-- Strong Aurora Glow Filter -->
-    <filter id="aurora-blur" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="80" />
-    </filter>
-
-    <!-- Safe CDATA Style wrapper for strict XML engines -->
     <style type="text/css">
       <![CDATA[
       /* --- FONTS & STYLES --- */
@@ -35,129 +22,126 @@
       text {
         font-family: 'Fira Code', monospace;
         font-size: 13.5px;
-        fill: #F3F4F6;
+        fill: #E5E7EB;
       }
 
-      /* --- DYNAMIC TRANSFORMS & KEYFRAMES --- */
-      @keyframes orbit-1 {
-        0%, 100% { transform: translate(0px, 0px) scale(1); }
-        50% { transform: translate(120px, 80px) scale(1.2); }
+      /* --- HARDWARE ACCELERATED ANIMATIONS (NO BLURS) --- */
+      @keyframes float-embers {
+        0% {
+          transform: translateY(150px) translateX(0) scale(0.5);
+          opacity: 0;
+        }
+        20% {
+          opacity: 0.9;
+        }
+        80% {
+          opacity: 0.6;
+        }
+        100% {
+          transform: translateY(-400px) translateX(50px) scale(0.2);
+          opacity: 0;
+        }
       }
-      @keyframes orbit-2 {
-        0%, 100% { transform: translate(0px, 0px) scale(1.2); }
-        50% { transform: translate(-140px, -100px) scale(0.9); }
-      }
-      @keyframes twinkle {
-        0%, 100% { opacity: 0.15; transform: scale(0.8) rotate(0deg); }
-        50% { opacity: 1; transform: scale(1.4) rotate(90deg); fill: #6AD3F7; }
-      }
+
       @keyframes active-cursor {
         0%, 100% { opacity: 0; }
         50% { opacity: 1; }
       }
+
       @keyframes code-fade {
-        from { opacity: 0; transform: translateY(8px); }
+        from { opacity: 0; transform: translateY(6px); }
         to { opacity: 1; transform: translateY(0); }
       }
-      @keyframes neon-pulse {
-        0%, 100% { filter: drop-shadow(0 0 2px rgba(99, 102, 241, 0.4)); }
-        50% { filter: drop-shadow(0 0 12px rgba(168, 85, 247, 0.8)); }
+
+      @keyframes gold-glint {
+        0%, 100% { fill: #FFD700; opacity: 0.8; }
+        50% { fill: #FF8C00; opacity: 1; }
       }
 
       /* --- CLASS BINDINGS --- */
-      .aurora-1 {
-        animation: orbit-1 20s infinite alternate ease-in-out;
-        fill: #3B82F6;
-      }
-      .aurora-2 {
-        animation: orbit-2 25s infinite alternate ease-in-out;
-        fill: #D946EF;
-      }
-      .sparkle {
-        animation: twinkle 4s infinite ease-in-out;
+      .ember {
+        animation: float-embers 8s infinite linear;
         transform-origin: center;
-        fill: #A855F7;
-      }
-      .terminal-frame {
-        fill: rgba(15, 23, 42, 0.75);
-        backdrop-filter: blur(16px);
+        will-change: transform, opacity;
       }
       .live-cursor {
         animation: active-cursor 1s infinite steps(2, start);
-        fill: #EC4899;
+        fill: #FF5F1F;
         font-weight: bold;
       }
       .code-line {
         opacity: 0;
-        animation: code-fade 0.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+        animation: code-fade 0.4s cubic-bezier(0.25, 1, 0.5, 1) forwards;
       }
-      .accent-glow {
-        animation: neon-pulse 3s infinite ease-in-out;
+      .glint-text {
+        animation: gold-glint 4s infinite alternate;
+        fill: #FFD700;
+        font-weight: bold;
       }
 
-      /* --- MONOKAI PRO NEON PALETTE --- */
-      .keyword { fill: #FF6188; font-weight: bold; }
-      .variable { fill: #7CD3FC; font-weight: bold; }
-      .property { fill: #A9DC76; }
-      .string { fill: #FFD866; }
-      .number { fill: #AB9DF2; }
-      .bracket { fill: #FC9867; }
-      .comment { fill: #727072; font-style: italic; }
+      /* --- KGF CINEMATIC HIGH-CONTRAST PALETTE --- */
+      .keyword { fill: #FF5F1F; font-weight: bold; } /* Magma Orange */
+      .variable { fill: #FFD700; font-weight: bold; } /* Shiny Gold */
+      .property { fill: #F59E0B; } /* Molten Amber */
+      .string { fill: #FBBF24; } /* Soft Gold string */
+      .number { fill: #FF9F1C; }
+      .bracket { fill: #EF4444; } /* Red outline */
+      .comment { fill: #8B7D77; font-style: italic; } /* Volcanic Charcoal Ash */
 
       /* --- STAGGERED LINE ANIMATION TIME --- */
-      .l1 { animation-delay: 0.04s; }
-      .l2 { animation-delay: 0.08s; }
-      .l3 { animation-delay: 0.12s; }
-      .l4 { animation-delay: 0.16s; }
-      .l5 { animation-delay: 0.20s; }
-      .l6 { animation-delay: 0.24s; }
-      .l7 { animation-delay: 0.28s; }
-      .l8 { animation-delay: 0.32s; }
-      .l9 { animation-delay: 0.36s; }
-      .l10 { animation-delay: 0.40s; }
-      .l11 { animation-delay: 0.44s; }
-      .l12 { animation-delay: 0.48s; }
-      .l13 { animation-delay: 0.52s; }
-      .l14 { animation-delay: 0.56s; }
-      .l15 { animation-delay: 0.60s; }
-      .l16 { animation-delay: 0.64s; }
-      .l17 { animation-delay: 0.68s; }
-      .l18 { animation-delay: 0.72s; }
-      .l19 { animation-delay: 0.76s; }
-      .l20 { animation-delay: 0.80s; }
-      .l21 { animation-delay: 0.84s; }
-      .l22 { animation-delay: 0.88s; }
-      .l23 { animation-delay: 0.92s; }
-      .l24 { animation-delay: 0.96s; }
-      .l25 { animation-delay: 1.00s; }
-      .l26 { animation-delay: 1.04s; }
-      .l27 { animation-delay: 1.08s; }
-      .l28 { animation-delay: 1.12s; }
-      .l29 { animation-delay: 1.16s; }
-      .l30 { animation-delay: 1.20s; }
-      .l31 { animation-delay: 1.24s; }
-      .l32 { animation-delay: 1.28s; }
-      .l33 { animation-delay: 1.32s; }
-      .l34 { animation-delay: 1.36s; }
-      .l35 { animation-delay: 1.40s; }
-      .l36 { animation-delay: 1.44s; }
-      .l37 { animation-delay: 1.48s; }
-      .l38 { animation-delay: 1.52s; }
-      .l39 { animation-delay: 1.56s; }
-      .l40 { animation-delay: 1.60s; }
-      .l41 { animation-delay: 1.64s; }
-      .l42 { animation-delay: 1.68s; }
-      .l43 { animation-delay: 1.72s; }
-      .l44 { animation-delay: 1.76s; }
-      .l45 { animation-delay: 1.80s; }
-      .l46 { animation-delay: 1.84s; }
-      .l47 { animation-delay: 1.88s; }
-      .l48 { animation-delay: 1.92s; }
-      .l49 { animation-delay: 1.96s; }
-      .l50 { animation-delay: 2.00s; }
-      .l51 { animation-delay: 2.04s; }
-      .l52 { animation-delay: 2.08s; }
-      .l53 { animation-delay: 2.12s; }
+      .l1 { animation-delay: 0.03s; }
+      .l2 { animation-delay: 0.06s; }
+      .l3 { animation-delay: 0.09s; }
+      .l4 { animation-delay: 0.12s; }
+      .l5 { animation-delay: 0.15s; }
+      .l6 { animation-delay: 0.18s; }
+      .l7 { animation-delay: 0.21s; }
+      .l8 { animation-delay: 0.24s; }
+      .l9 { animation-delay: 0.27s; }
+      .l10 { animation-delay: 0.30s; }
+      .l11 { animation-delay: 0.33s; }
+      .l12 { animation-delay: 0.36s; }
+      .l13 { animation-delay: 0.39s; }
+      .l14 { animation-delay: 0.42s; }
+      .l15 { animation-delay: 0.45s; }
+      .l16 { animation-delay: 0.48s; }
+      .l17 { animation-delay: 0.51s; }
+      .l18 { animation-delay: 0.54s; }
+      .l19 { animation-delay: 0.57s; }
+      .l20 { animation-delay: 0.60s; }
+      .l21 { animation-delay: 0.63s; }
+      .l22 { animation-delay: 0.66s; }
+      .l23 { animation-delay: 0.69s; }
+      .l24 { animation-delay: 0.72s; }
+      .l25 { animation-delay: 0.75s; }
+      .l26 { animation-delay: 0.78s; }
+      .l27 { animation-delay: 0.81s; }
+      .l28 { animation-delay: 0.84s; }
+      .l29 { animation-delay: 0.87s; }
+      .l30 { animation-delay: 0.90s; }
+      .l31 { animation-delay: 0.93s; }
+      .l32 { animation-delay: 0.96s; }
+      .l33 { animation-delay: 0.99s; }
+      .l34 { animation-delay: 1.02s; }
+      .l35 { animation-delay: 1.05s; }
+      .l36 { animation-delay: 1.08s; }
+      .l37 { animation-delay: 1.11s; }
+      .l38 { animation-delay: 1.14s; }
+      .l39 { animation-delay: 1.17s; }
+      .l40 { animation-delay: 1.20s; }
+      .l41 { animation-delay: 1.23s; }
+      .l42 { animation-delay: 1.26s; }
+      .l43 { animation-delay: 1.29s; }
+      .l44 { animation-delay: 1.32s; }
+      .l45 { animation-delay: 1.35s; }
+      .l46 { animation-delay: 1.38s; }
+      .l47 { animation-delay: 1.41s; }
+      .l48 { animation-delay: 1.44s; }
+      .l49 { animation-delay: 1.47s; }
+      .l50 { animation-delay: 1.50s; }
+      .l51 { animation-delay: 1.53s; }
+      .l52 { animation-delay: 1.56s; }
+      .l53 { animation-delay: 1.59s; }
       ]]>
     </style>
   </defs>
@@ -165,59 +149,59 @@
   <!-- Solid Canvas Background -->
   <rect width="100%" height="100%" rx="16" fill="url(#bg-grad)" />
 
-  <!-- Dynamic Drifting Aurora Atmosphere -->
-  <circle class="aurora-1" cx="150" cy="350" r="320" filter="url(#aurora-blur)" opacity="0.25" />
-  <circle class="aurora-2" cx="700" cy="950" r="380" filter="url(#aurora-blur)" opacity="0.25" />
+  <!-- High-Performance Cinematic Rising Embers (Smooth 60fps vector particles) -->
+  <!-- Ember Group 1 -->
+  <circle class="ember" style="animation-delay: 0s;" cx="120" cy="900" r="4" fill="#FF5F1F" />
+  <circle class="ember" style="animation-delay: 1.5s;" cx="380" cy="1100" r="3" fill="#FFD700" />
+  <circle class="ember" style="animation-delay: 3s;" cx="620" cy="1000" r="4.5" fill="#FF8C00" />
+  <circle class="ember" style="animation-delay: 4.5s;" cx="220" cy="1200" r="2.5" fill="#FF5F1F" />
+  <!-- Ember Group 2 -->
+  <circle class="ember" style="animation-delay: 0.8s;" cx="780" cy="850" r="3.5" fill="#FFD700" />
+  <circle class="ember" style="animation-delay: 2.3s;" cx="490" cy="950" r="4" fill="#FF8C00" />
+  <circle class="ember" style="animation-delay: 3.8s;" cx="150" cy="1050" r="3" fill="#FF5F1F" />
+  <circle class="ember" style="animation-delay: 5.3s;" cx="710" cy="1150" r="5" fill="#FFD700" />
+  <!-- Small dust particles -->
+  <circle class="ember" style="animation-delay: 1.1s;" cx="300" cy="700" r="1.5" fill="#FFD700" />
+  <circle class="ember" style="animation-delay: 2.7s;" cx="580" cy="800" r="2" fill="#FF8C00" />
+  <circle class="ember" style="animation-delay: 4.2s;" cx="680" cy="650" r="1.5" fill="#FF5F1F" />
 
-  <!-- Glassmorphic Front Panel Frame -->
+  <!-- Sleek Gritty Frame Border -->
   <rect x="3" y="3" width="844" height="1284" rx="16" fill="none" stroke="url(#border-grad)" stroke-width="2.5" />
-  <rect class="terminal-frame" x="5" y="5" width="840" height="1280" rx="16" />
+  <rect x="5" y="5" width="840" height="1280" rx="16" fill="rgba(10, 6, 5, 0.88)" />
 
-  <!-- Vector Twinkles / Diamonds -->
-  <path class="sparkle" style="animation-delay: 0s;" d="M120,50 L123,55 L129,57 L123,59 L120,64 L117,59 L111,57 L117,55 Z" />
-  <path class="sparkle" style="animation-delay: 1s;" d="M730,100 L732,104 L737,106 L732,108 L730,112 L728,108 L723,106 L728,104 Z" />
-  <path class="sparkle" style="animation-delay: 2s;" d="M780,680 L782,684 L787,686 L782,688 L780,692 L778,688 L773,686 L778,684 Z" />
-  <path class="sparkle" style="animation-delay: 3s;" d="M90,1020 L92,1024 L97,1026 L92,1028 L90,1032 L88,1028 L83,1026 L88,1024 Z" />
-
-  <!-- VS Code Window Header -->
+  <!-- IDE Window Chrome Header -->
   <g transform="translate(25, 20)">
-    <circle cx="0" cy="0" r="6" fill="#FF5F56" />
-    <circle cx="20" cy="0" r="6" fill="#FFBD2E" />
-    <circle cx="40" cy="0" r="6" fill="#27C93F" />
-    <text x="75" y="5" font-size="12" fill="#9CA3AF" font-weight="bold">developer.ts</text>
-  </g>
-
-  <!-- Glowing Premium Badge -->
-  <g transform="translate(780, 20)">
-    <circle cx="10" cy="10" r="18" fill="#1E1B4B" stroke="#8B5CF6" stroke-width="1.5" class="accent-glow" />
-    <path d="M4,10 L8,6 L12,10 L10,10 L10,14 L6,14 L6,10 Z" fill="#A855F7" transform="translate(5, 5) scale(0.8)" />
+    <circle cx="0" cy="0" r="6" fill="#4B200C" /> <!-- Dark volcanic dots -->
+    <circle cx="20" cy="0" r="6" fill="#E67E22" />
+    <circle cx="40" cy="0" r="6" fill="#F1C40F" />
+    <text x="75" y="5" font-size="12" fill="#8B7D77" font-weight="bold">developer.ts</text>
   </g>
 
   <!-- Complete Javascript Object with Tab x-Coordinates -->
   <g transform="translate(20, 60)">
     <!-- const jashwanth = { -->
     <text class="code-line l1" x="25" y="30">
-      <tspan class="keyword">const</tspan> <tspan class="variable">jashwanth</tspan> = <tspan class="bracket">{</tspan>
+      <tspan class="keyword">const</tspan> <tspan class="glint-text">jashwanth</tspan> = <tspan class="bracket">{</tspan>
     </text>
 
     <!-- name: "Marisetty Jashwanth", -->
     <text class="code-line l2" x="55" y="52">
-      <tspan fill="#9CA3AF">name:</tspan> <tspan class="string">"Marisetty Jashwanth"</tspan>,
+      <tspan fill="#8B7D77">name:</tspan> <tspan class="string">"Marisetty Jashwanth"</tspan>,
     </text>
 
     <!-- college: "IIIT Jabalpur — B.Tech CSE (2022–Present)", -->
     <text class="code-line l3" x="55" y="74">
-      <tspan fill="#9CA3AF">college:</tspan> <tspan class="string">"IIIT Jabalpur — B.Tech CSE (2022–Present)"</tspan>,
+      <tspan fill="#8B7D77">college:</tspan> <tspan class="string">"IIIT Jabalpur — B.Tech CSE (2022–Present)"</tspan>,
     </text>
 
     <!-- role: "Backend Developer", -->
     <text class="code-line l4" x="55" y="96">
-      <tspan fill="#9CA3AF">role:</tspan> <tspan class="string">"Backend Developer"</tspan>,
+      <tspan fill="#8B7D77">role:</tspan> <tspan class="string">"Backend Developer"</tspan>,
     </text>
 
     <!-- location: "Jabalpur, India 🇮🇳", -->
     <text class="code-line l5" x="55" y="118">
-      <tspan fill="#9CA3AF">location:</tspan> <tspan class="string">"Jabalpur, India 🇮🇳"</tspan>,
+      <tspan fill="#8B7D77">location:</tspan> <tspan class="string">"Jabalpur, India 🇮🇳"</tspan>,
     </text>
 
     <!-- currentlyBuilding: [ -->
@@ -252,12 +236,12 @@
 
     <!-- languages: [...] -->
     <text class="code-line l12" x="85" y="272">
-      <tspan fill="#9CA3AF">languages:</tspan> <tspan class="bracket">[</tspan><tspan class="string">"JavaScript"</tspan>, <tspan class="string">"TypeScript"</tspan>, <tspan class="string">"C++"</tspan><tspan class="bracket">]</tspan>,
+      <tspan fill="#8B7D77">languages:</tspan> <tspan class="bracket">[</tspan><tspan class="string">"JavaScript"</tspan>, <tspan class="string">"TypeScript"</tspan>, <tspan class="string">"C++"</tspan><tspan class="bracket">]</tspan>,
     </text>
 
     <!-- frontend: [ -->
     <text class="code-line l13" x="85" y="294">
-      <tspan fill="#9CA3AF">frontend:</tspan> <tspan class="bracket">[</tspan>
+      <tspan fill="#8B7D77">frontend:</tspan> <tspan class="bracket">[</tspan>
     </text>
 
     <!-- React.js, HTML, CSS, Tailwind CSS -->
@@ -273,7 +257,7 @@
 
     <!-- backend: [ -->
     <text class="code-line l19" x="85" y="426">
-      <tspan fill="#9CA3AF">backend:</tspan> <tspan class="bracket">[</tspan>
+      <tspan fill="#8B7D77">backend:</tspan> <tspan class="bracket">[</tspan>
     </text>
 
     <!-- Node.js, Express.js, RESTful APIs -->
@@ -288,7 +272,7 @@
 
     <!-- databases: [ -->
     <text class="code-line l24" x="85" y="536">
-      <tspan fill="#9CA3AF">databases:</tspan> <tspan class="bracket">[</tspan>
+      <tspan fill="#8B7D77">databases:</tspan> <tspan class="bracket">[</tspan>
     </text>
 
     <!-- PostgreSQL, MongoDB, MySQL -->
@@ -303,7 +287,7 @@
 
     <!-- cache_and_messaging: [ -->
     <text class="code-line l29" x="85" y="646">
-      <tspan fill="#9CA3AF">cache_and_messaging:</tspan> <tspan class="bracket">[</tspan>
+      <tspan fill="#8B7D77">cache_and_messaging:</tspan> <tspan class="bracket">[</tspan>
     </text>
 
     <!-- Redis, RabbitMQ -->
@@ -317,7 +301,7 @@
 
     <!-- devOps_and_tools: [ -->
     <text class="code-line l33" x="85" y="734">
-      <tspan fill="#9CA3AF">devOps_and_tools:</tspan> <tspan class="bracket">[</tspan>
+      <tspan fill="#8B7D77">devOps_and_tools:</tspan> <tspan class="bracket">[</tspan>
     </text>
 
     <!-- Docker, Git, Firebase -->
@@ -332,7 +316,7 @@
 
     <!-- cloud_and_apis: [ -->
     <text class="code-line l38" x="85" y="844">
-      <tspan fill="#9CA3AF">cloud_and_apis:</tspan> <tspan class="bracket">[</tspan>
+      <tspan fill="#8B7D77">cloud_and_apis:</tspan> <tspan class="bracket">[</tspan>
     </text>
 
     <!-- Firebase FCM, Google Maps API -->
@@ -346,7 +330,7 @@
 
     <!-- ai_ml: [ -->
     <text class="code-line l42" x="85" y="932">
-      <tspan fill="#9CA3AF">ai_ml:</tspan> <tspan class="bracket">[</tspan>
+      <tspan fill="#8B7D77">ai_ml:</tspan> <tspan class="bracket">[</tspan>
     </text>
 
     <!-- HuggingFace Toxic-BERT -->
@@ -369,22 +353,22 @@
 
     <!-- jee: "98.6 Percentile..." -->
     <text class="code-line l47" x="85" y="1042">
-      <tspan fill="#9CA3AF">jee:</tspan> <tspan class="string">"98.6 Percentile — JEE Main 2022 (Top 1.4%)"</tspan>,
+      <tspan fill="#8B7D77">jee:</tspan> <tspan class="string">"98.6 Percentile — JEE Main 2022 (Top 1.4%)"</tspan>,
     </text>
 
     <!-- leetcode: "Rating 1833..." -->
     <text class="code-line l48" x="85" y="1064">
-      <tspan fill="#9CA3AF">leetcode:</tspan> <tspan class="string">"Rating 1833 | Rank 767 in Weekly 482"</tspan>,
+      <tspan fill="#8B7D77">leetcode:</tspan> <tspan class="string">"Rating 1833 | Rank 767 in Weekly 482"</tspan>,
     </text>
 
     <!-- codechef: "3⭐ | Rating 1671" -->
     <text class="code-line l49" x="85" y="1086">
-      <tspan fill="#9CA3AF">codechef:</tspan> <tspan class="string">"3⭐ | Rating 1671"</tspan>,
+      <tspan fill="#8B7D77">codechef:</tspan> <tspan class="string">"3⭐ | Rating 1671"</tspan>,
     </text>
 
     <!-- codeforces: "Specialist | Rating 1423" -->
     <text class="code-line l50" x="85" y="1108">
-      <tspan fill="#9CA3AF">codeforces:</tspan> <tspan class="string">"Specialist | Rating 1423"</tspan>
+      <tspan fill="#8B7D77">codeforces:</tspan> <tspan class="string">"Specialist | Rating 1423"</tspan>
     </text>
 
     <!-- }, -->
