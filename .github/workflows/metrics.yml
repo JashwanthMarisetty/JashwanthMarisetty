@@ -1,0 +1,47 @@
+name: GitHub Metrics
+
+on:
+  schedule:
+    - cron: "0 0 * * *"   # Runs daily at midnight
+  workflow_dispatch:        # Allow manual trigger
+  push:
+    branches:
+      - main
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      # 3D Skyline (classic bar chart style)
+      - name: Generate GitHub Skyline
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.skyline.svg
+          token: NOT_NEEDED
+          base: ""
+          plugin_skyline: yes
+          plugin_skyline_year: 2026
+          plugin_skyline_frames: 6
+          plugin_skyline_quality: 1
+
+      # 3D GitHub City (more realistic city buildings style)
+      - name: Generate GitHub City
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.city.svg
+          token: NOT_NEEDED
+          base: ""
+          plugin_skyline: yes
+          plugin_skyline_year: 2026
+          plugin_skyline_frames: 6
+          plugin_skyline_quality: 1
+          plugin_skyline_settings: |
+            {
+              "url": "https://honzaap.github.io/GithubCity?name=${login}&year=${year}",
+              "ready": "[...document.querySelectorAll('.display-info span')].map(span => span.innerText).includes('${login}')",
+              "wait": 4,
+              "hide": ".github-corner, .footer-link, .buttons-options, .mobile-rotate, .display-info span:first-child"
+            }
