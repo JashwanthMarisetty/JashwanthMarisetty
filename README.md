@@ -26,11 +26,10 @@
 </div>
 
 ---
-
 ## 🧠 About Me
 
 <div align="center">
-  <img src="profile-code-card.svg" alt="Animated Developer Profile Card" width="100%"/>
+  <img src="https://raw.githubusercontent.com/JashwanthMarisetty/JashwanthMarisetty/main/profile-code-card.svg" alt="Animated Developer Profile Card" width="100%"/>
 </div>
 
 ---
