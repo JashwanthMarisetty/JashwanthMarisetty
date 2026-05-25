@@ -15,9 +15,9 @@
       <stop offset="100%" stop-color="#8B4513" /> <!-- Charcoal Bronze -->
     </linearGradient>
 
-    <!-- Highly Optimized Glow Filter for tiny sparks only (prevents lag) -->
-    <filter id="spark-glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="1.8" result="blur" />
+    <!-- High-Performance Glow Filter for Fire Embers -->
+    <filter id="spark-glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="3.5" result="blur" />
       <feMerge>
         <feMergeNode in="blur" />
         <feMergeNode in="SourceGraphic" />
@@ -34,27 +34,28 @@
         fill: #E5E7EB;
       }
 
-      /* --- THERMAL DRAFT PARTICLE PHYSICS (60FPS GPU DRIVEN RELATIVE OFFSETS) --- */
+      /* --- THERMAL DRAFT CROSSWAYS PARTICLE PHYSICS (60FPS GPU DRIVEN) --- */
       @keyframes draft-wavy-left {
         0% {
-          transform: translateY(0) translateX(0) scale(1);
+          transform: translateY(0) translateX(0) scale(1.1);
           opacity: 0;
           fill: #FFFFFF;
         }
-        10% {
+        8% {
           opacity: 1;
           fill: #FFF4A3;
         }
-        50% {
-          transform: translateY(-550px) translateX(-40px) scale(0.85);
-          fill: #FF5E00;
+        40% {
+          transform: translateY(-450px) translateX(-140px) scale(0.9);
+          fill: #FF8C00;
         }
-        85% {
-          opacity: 0.7;
+        75% {
+          transform: translateY(-850px) translateX(90px) scale(0.7);
           fill: #FF3C00;
+          opacity: 1;
         }
         100% {
-          transform: translateY(-1100px) translateX(-70px) scale(0.3);
+          transform: translateY(-1120px) translateX(-110px) scale(0.3);
           opacity: 0;
           fill: #3E0C06;
         }
@@ -62,24 +63,25 @@
 
       @keyframes draft-wavy-right {
         0% {
-          transform: translateY(0) translateX(0) scale(0.9);
+          transform: translateY(0) translateX(0) scale(1.1);
           opacity: 0;
           fill: #FFEAA7;
         }
-        15% {
+        10% {
           opacity: 1;
           fill: #FFAE00;
         }
-        60% {
-          transform: translateY(-500px) translateX(45px) scale(0.7);
+        45% {
+          transform: translateY(-500px) translateX(140px) scale(0.9);
           fill: #E63B00;
         }
-        85% {
-          opacity: 0.6;
-          fill: #8B0000;
+        70% {
+          transform: translateY(-800px) translateX(-90px) scale(0.7);
+          fill: #D94000;
+          opacity: 1;
         }
         100% {
-          transform: translateY(-1100px) translateX(80px) scale(0.2);
+          transform: translateY(-1120px) translateX(110px) scale(0.2);
           opacity: 0;
           fill: #210200;
         }
@@ -112,13 +114,13 @@
         will-change: transform, opacity;
       }
       .s1 { animation: draft-wavy-left 9s infinite linear; animation-delay: 0s; }
-      .s2 { animation: draft-wavy-right 11s infinite linear; animation-delay: 1.5s; }
-      .s3 { animation: draft-wavy-left 8s infinite linear; animation-delay: 3s; }
-      .s4 { animation: draft-wavy-right 10s infinite linear; animation-delay: 4.5s; }
-      .s5 { animation: draft-wavy-left 9s infinite linear; animation-delay: 6s; }
-      .s6 { animation: draft-wavy-right 8s infinite linear; animation-delay: 7.5s; }
-      .s7 { animation: draft-wavy-left 9s infinite linear; animation-delay: 2.2s; }
-      .s8 { animation: draft-wavy-right 10s infinite linear; animation-delay: 5.3s; }
+      .s2 { animation: draft-wavy-right 10s infinite linear; animation-delay: 1.5s; }
+      .s3 { animation: draft-wavy-left 8s infinite linear; animation-delay: 3.2s; }
+      .s4 { animation: draft-wavy-right 9.5s infinite linear; animation-delay: 4.8s; }
+      .s5 { animation: draft-wavy-left 8.5s infinite linear; animation-delay: 6.4s; }
+      .s6 { animation: draft-wavy-right 9s infinite linear; animation-delay: 8s; }
+      .s7 { animation: draft-wavy-left 9.5s infinite linear; animation-delay: 2.2s; }
+      .s8 { animation: draft-wavy-right 10.5s infinite linear; animation-delay: 5.6s; }
 
       .live-cursor {
         animation: active-cursor 1s infinite steps(2, start);
@@ -372,18 +374,22 @@
     </text>
   </g>
 
-  <!-- Layer 3: Dynamic Rising Magma Embers (Placed on top of terminal for maximum vibrance & depth) -->
-  <circle class="spark-left s1" cx="150" cy="1200" r="4.5" />
-  <circle class="spark-right s2" cx="380" cy="1200" r="3.5" />
-  <circle class="spark-left s3" cx="620" cy="1200" r="5" />
-  <circle class="spark-right s4" cx="250" cy="1200" r="3" />
-  <circle class="spark-left s5" cx="730" cy="1200" r="4" />
-  <circle class="spark-right s6" cx="500" cy="1200" r="2.5" />
-  <circle class="spark-left s7" cx="180" cy="1200" r="3.8" />
-  <circle class="spark-right s8" cx="680" cy="1200" r="4.2" />
+  <!-- Layer 3: Ultra-Visible Large Rising Magma Embers (Overlaid on top in 3D crossways movement) -->
+  <!-- Left sways (crossing rightwards) -->
+  <circle class="spark-left s1" cx="160" cy="1200" r="9" />
+  <circle class="spark-left s3" cx="640" cy="1200" r="10.5" />
+  <circle class="spark-left s5" cx="300" cy="1200" r="7.5" />
+  <circle class="spark-left s7" cx="440" cy="1200" r="8" />
 
-  <!-- Micro volcanic dust layers -->
-  <circle class="spark-left s3" cx="320" cy="1200" r="1.5" />
-  <circle class="spark-right s5" cx="580" cy="1200" r="2" />
-  <circle class="spark-left s1" cx="440" cy="1200" r="1.2" />
+  <!-- Right sways (crossing leftwards) -->
+  <circle class="spark-right s2" cx="380" cy="1200" r="8.5" />
+  <circle class="spark-right s4" cx="240" cy="1200" r="10" />
+  <circle class="spark-right s6" cx="720" cy="1200" r="8" />
+  <circle class="spark-right s8" cx="530" cy="1200" r="9.5" />
+
+  <!-- Large high-density volcanic spark cores -->
+  <circle class="spark-left s1" cx="220" cy="1200" r="6" />
+  <circle class="spark-right s4" cx="600" cy="1200" r="7.5" />
+  <circle class="spark-left s7" cx="100" cy="1200" r="8" />
+  <circle class="spark-right s6" cx="470" cy="1200" r="6.5" />
 </svg>
