@@ -227,6 +227,19 @@ const jashwanth = {
 </div>
 
 ---
+## 🏙️ GitHub City & Skyline
+
+<div align="center">
+
+<img src="metrics.city.svg" alt="GitHub City" width="100%"/>
+
+<br/>
+
+<img src="metrics.skyline.svg" alt="GitHub Skyline" width="100%"/>
+
+</div>
+
+---
 
 ## 🤝 Let's Connect
 
