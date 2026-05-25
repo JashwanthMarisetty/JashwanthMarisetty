@@ -29,73 +29,9 @@
 
 ## 🧠 About Me
 
-```typescript
-
-const jashwanth = {
-  name: "Marisetty Jashwanth",
-  college: "IIIT Jabalpur — B.Tech CSE (2022–Present)",
-  role: "Backend Developer",
-  location: "Jabalpur, India 🇮🇳",
-
-  currentlyBuilding: [
-    "🧱 Formula Builder — Full-stack form engine with AI spam detection",
-    "🚛 Smart Truck — K-means clustering for last-mile logistics",
-    "📦 Bhandara App — Hyperlocal food-event platform (Play Store ✅)",
-  ],
-
-  techStack: {
-    languages: ["JavaScript", "TypeScript", "C++"],
-
-    frontend: [
-      "React.js",
-      "HTML",
-      "CSS",
-      "Tailwind CSS"
-    ],
-
-    backend: [
-      "Node.js",
-      "Express.js",
-      "RESTful APIs"
-    ],
-
-    databases: [
-      "PostgreSQL",
-      "MongoDB",
-      "MySQL"
-    ],
-
-    cache_and_messaging: [
-      "Redis",
-      "RabbitMQ"
-    ],
-
-    devOps_and_tools: [
-      "Docker",
-      "Git",
-      "Firebase"
-    ],
-
-    cloud_and_apis: [
-      "Firebase FCM",
-      "Google Maps API"
-    ],
-
-    ai_ml: [
-      "HuggingFace Toxic-BERT"
-    ],
-  },
-
-  achievements: {
-    jee: "98.6 Percentile — JEE Main 2022 (Top 1.4% of 1M+ students)",
-    leetcode: "Rating 1833 | Rank 767 in Weekly Contest 482 (40K+ participants)",
-    codechef: "3⭐ | Rating 1671",
-    codeforces: "Specialist | Rating 1423",
-  },
-
-  funFact: "I shipped a production-ready form builder from a 36-hour hackathon MVP 🏆",
-};
-```
+<div align="center">
+  <img src="profile-code-card.svg" alt="Animated Developer Profile Card" width="100%"/>
+</div>
 
 ---
 
